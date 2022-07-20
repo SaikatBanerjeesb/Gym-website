@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="'en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="" X-UA-Compatible" content="ie=edge">
+    <title>Fitness Club</title>
+</head>
+<style>
+    body {
+        height: 2000px;
+        background-image: url('https://c4.wallpaperflare.com/wallpaper/206/268/839/pose-muscle-muscle-rod-press-hd-wallpaper-preview.jpg');
+        background-size: 1600px 800px;
+    }
+
+    .logo {
+        display: inline;
+        color: white;
+        font-size: large;
+        font-weight: bold;
+    }
+    nav {
+        display:flex;
+        width: 40%;
+        margin: 5px auto;
+        border: 2px solid black;
+        background-color: black;
+        justify-content: space-around;
+        border-radius: 30px;
+        position: fixed;
+        top: 2px;
+        left: 450px;
+    }
+    #search {
+        position: absolute;
+        bottom: 6px;
+        right: 5px;
+    }
+    .contact {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    a {
+        color: white;
+        font-size: large;
+        text-decoration: none;
+        padding: 10px 10px;
+    }
+    a:hover {
+        color: grey;
+        text-decoration: underline;
+    }
+    button {
+        cursor: pointer;
+    }
+    .form {
+        border: 2px solid white;
+        border-radius: 20px;
+        width: 25%;
+        margin: 120px 55px;
+        padding: 20px 20px;
+    }
+    form {
+        color: white;
+        font-size: medium;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    h3 {
+        font-size: large;
+        font-weight: bold;
+        color: aliceblue;
+        text-align: center;
+    }
+    .submit {
+        text-align: center;
+        border-radius: 5px;
+        margin: 0px 150px;
+        position: relative;
+        top: 5px;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="logo">
+            Fitness Club<br>
+            <img src="https://thumbs.dreamstime.com/b/arm-dumbbell-gym-club-logo-label-vector-illustration-149954798.jpg"
+                width="50px" height="40px">
+        </div>
+        <nav>
+            <a href="main.html">Home</a>
+            <a href="https://www.calculator.net/fitness-and-health-calculator.html" target="_blank">Fitness
+                Calculator</a>
+            <a href="aboutus.html">About us</a>
+            <a href = "mailto: fitnessclub@gmail.com">Contact us</a>
+        </nav>
+        <div class="contact">
+            <button>Call us</button>
+            <button>Mail us</button>
+        </div>
+    </header>
+    <div class="form">
+        <h3>JOIN THE BEST GYM OF KOLKATA NOW</h3>
+        <form action="">
+            <div>
+                Name:<input type="text"><br>
+            </div>
+            <div>
+                Age:<input type="text"><br>
+            </div>
+            <div>
+                Gender: Male<input type="radio">Female<input type="radio"><br>
+            </div>
+            <div>
+                Contact Number:<input type="number"><br>
+            </div>
+            <div>
+                Mail-id:<input type="text"><br>
+            </div>
+            <button class="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
