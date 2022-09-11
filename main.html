@@ -9,12 +9,27 @@
 </head>
 <style>
     body {
-        height: 2000px;
-        background-image: url('https://c4.wallpaperflare.com/wallpaper/206/268/839/pose-muscle-muscle-rod-press-hd-wallpaper-preview.jpg');
-        background-size: 1600px 800px;
+        height: 500px;
+        background-image: url('https://images.pexels.com/photos/841131/pexels-photo-841131.jpeg?auto=compress&cs=tinysrgb&w=600');
+        /* background-size: 1600px 800px; */
+        /* background-repeat: no-repeat; */
+    }
+    header::before{
+        content: '''';
+        background-color: black;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 45px;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.8;
     }
 
     .logo {
+        position:absolute;
+        top: 0px;
+        left: 0px;
         display: inline;
         color: white;
         font-size: large;
@@ -24,12 +39,13 @@
         display:flex;
         width: 40%;
         margin: 5px auto;
-        border: 2px solid black;
-        background-color: black;
+        /* font-size: x-large; */
+        /* border: 2px solid black; */
+        /* background-color: black; */
         justify-content: space-around;
-        border-radius: 30px;
-        position: fixed;
-        top: 2px;
+        /* border-radius: 30px; */
+        position: absolute;
+        top: 0px;
         left: 450px;
     }
     #search {
@@ -41,6 +57,7 @@
         position: absolute;
         top: 10px;
         right: 10px;
+        font-size: larger;
     }
     a {
         color: white;
@@ -51,9 +68,21 @@
     a:hover {
         color: grey;
         text-decoration: underline;
+        font-size: larger;
     }
     button {
         cursor: pointer;
+    }
+    .form::before{
+        content: '''';
+        background-color: black;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 45px;
+        width: 100%;
+        z-index: -1;
+        opacity: 1;
     }
     .form {
         border: 2px solid white;
@@ -85,9 +114,9 @@
 <body>
     <header>
         <div class="logo">
-            Fitness Club<br>
             <img src="https://thumbs.dreamstime.com/b/arm-dumbbell-gym-club-logo-label-vector-illustration-149954798.jpg"
-                width="50px" height="40px">
+            width="50px" height="40px">
+            Fitness Club<br>
         </div>
         <nav>
             <a href="main.html">Home</a>
@@ -123,4 +152,5 @@
         </form>
     </div>
 </body>
+
 </html>
